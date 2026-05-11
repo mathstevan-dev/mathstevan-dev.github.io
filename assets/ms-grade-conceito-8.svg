@@ -1,0 +1,23 @@
+<svg width="900" height="360" viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="metal8" x1="190" y1="95" x2="710" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".5" stop-color="#D9E3EC"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="slash8" x1="405" y1="255" x2="515" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#885CFF"/>
+      <stop offset=".55" stop-color="#326BFF"/>
+      <stop offset="1" stop-color="#66CFFF"/>
+    </linearGradient>
+    <filter id="slashGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 .22 0 0 0 0 .32 0 0 0 0 1 0 0 0 .8 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <path d="M176 250V110H224L292 186L360 110H408V250H364V175L306 239H278L220 175V250H176Z" fill="url(#metal8)"/>
+  <path d="M442 260L526 100H565L481 260H442Z" fill="url(#slash8)" filter="url(#slashGlow)"/>
+  <path d="M614 250C596 250 582 236 582 218V212H626V218C626 225 631 230 638 230H724C731 230 736 225 736 218V206C736 199 731 194 724 194H619C601 194 587 180 587 162V142C587 124 601 110 619 110H756C774 110 788 124 788 142V148H744V142C744 135 739 130 732 130H641C634 130 629 135 629 142V153C629 160 634 165 641 165H746C764 165 778 179 778 197V218C778 236 764 250 746 250H614Z" fill="url(#metal8)"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="360" height="90" viewBox="0 0 360 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Base -->
+  <rect x="4" y="4" width="352" height="82" rx="41" fill="rgba(18,6,6,0.82)" stroke="#FF2B2B" stroke-width="2.5"></rect>
+
+  <!-- Linha interna -->
+  <rect x="12" y="12" width="336" height="66" rx="33" stroke="#FF6B6B" stroke-opacity="0.7" stroke-width="1.5"></rect>
+
+  <!-- Glow central -->
+  <rect x="20" y="20" width="320" height="50" rx="25" fill="url(#redGlow)" opacity="0.55"></rect>
+
+  <!-- Detalhes HUD -->
+  <path d="M34 45H88" stroke="#FF4D4D" stroke-width="2" stroke-linecap="round"></path>
+
+  <path d="M272 45H326" stroke="#FF4D4D" stroke-width="2" stroke-linecap="round"></path>
+
+  <!-- Pontos -->
+  <circle cx="24" cy="45" r="4.5" fill="#FF2B2B"></circle>
+  <circle cx="336" cy="45" r="4.5" fill="#FF2B2B"></circle>
+
+  <!-- Cantos tecnológicos -->
+  <path d="M52 22H100" stroke="#FF2B2B" stroke-width="2" stroke-linecap="round"></path>
+
+  <path d="M260 68H308" stroke="#FF2B2B" stroke-width="2" stroke-linecap="round"></path>
+
+  <!-- Pequenos detalhes -->
+  <rect x="145" y="14" width="70" height="3" rx="2" fill="#FF6B6B" opacity="0.7"></rect>
+  <rect x="145" y="73" width="70" height="3" rx="2" fill="#FF6B6B" opacity="0.7"></rect>
+
+  <defs>
+    <radialGradient id="redGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 45) rotate(90) scale(45 170)">
+      <stop stop-color="#FF2B2B"></stop>
+      <stop offset="0.5" stop-color="#FF0000" stop-opacity="0.35"></stop>
+      <stop offset="1" stop-color="#FF0000" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+</svg>

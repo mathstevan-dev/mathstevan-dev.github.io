@@ -1,0 +1,385 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  background-color: #442d538f;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  overflow-x: hidden;
+}
+/* Corpo */
+
+/* Cabeçalho */
+
+header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 10px 2%;
+  color: brown;
+  position: fixed;
+  pointer-events: none;
+  font-style:oblique;
+  z-index: 999;
+
+  ul {
+    letter-spacing: 1px;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    align-items: center;
+    background-color: #03e9031a;
+    padding: 10px 13px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+  }
+}
+/* Configuraçoes do cabeçalho */
+header ul li a,
+header ul li a:visited {
+  color: rgb(255, 255, 255);
+  pointer-events: auto;
+}
+header ul li a:hover {
+  color: #ff0000;
+  transition: 1s;
+  filter: brightness(1.5) drop-shadow(0 0 10px #aa9696);
+  transition: 0.8s;
+}
+
+.gatinho {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.gatinho img {
+  width: 150px;
+  height: auto;
+  transition: 0.5s;
+}
+
+.inicio{
+  display: flex-end;
+  align-items:center;
+  width: auto;
+  width: 20px;
+  transform: translateY(5px)
+  translateX(5px);
+}
+
+.pessoa {
+  display: flex-end;
+  align-items:center;
+  width: auto;
+  width: 20px;
+  transform: translateY(5px)
+  translateX(5px);
+}
+
+.whatsapp {
+  display: flex-end;
+  align-items:center;
+  width: auto;
+  width: 20px;
+  transform: translateY(5px)
+  translateX(5px);
+}
+
+.instagram {
+  display: flex-end;
+  align-items:center;
+  width: auto;
+  width: 20px;
+  transform: translateY(5px)
+  translateX(5px);
+}
+
+.git {
+  display: flex-end;
+  align-items:center;
+  width: auto;
+  width: 20px;
+  transform: translateY(5px)
+  translateX(5px);
+}
+
+.linkedin {
+  display: flex-end;
+  align-items:center;
+  width: auto;
+  width: 20px;
+  transform: translateY(5px)
+  translateX(5px);
+}
+
+/* Efeito quando o mouse está sobre o logotipo */
+header:hover .gatinho img,
+header:hover .gatinho i {
+  filter: brightness(1.5) drop-shadow(0 0 10px #0dc110);
+  transition: 0.5s;
+  transform: rotate(10deg);
+}
+
+.gatinho img,
+.gatinho i {
+  transition: 0.5s;
+}
+/* Logotipo */
+
+.gatinho {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+}
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Seção 1 */
+
+  button {
+  all: unset;
+}
+
+.secao1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/backgroundprofissional2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.conteudo {
+  width: min(1200px, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px,2vw,180px);
+  padding-top: 60px;
+}
+
+.perfil {
+  position: relative;
+  width: clamp(260px, 32vw, 430px);
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+
+.moldura,
+.foto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.foto {
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.moldura {
+  z-index: 2;
+  pointer-events: none;
+  transform: scale(3.52)
+  translatex(90px);
+}
+
+.info {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.botoes{
+  display: flex;
+  gap: 20px;
+  margin-left: 0;
+  width: auto;
+}
+
+.botoes .botaohud {
+  width: 220px;
+  height: 90px;
+  background-image: url("assets/botao.svg");
+  background-size: 100% 100% ;
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-color: transparent ;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(228, 215, 215) ;
+  font-size: 18px ;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration:underline;
+  transform: translateX(120px);
+}
+
+.botaohud:hover {
+  color: #ffffff;
+  transition: 2s;
+  
+      filter:
+    drop-shadow(0 0 10px #00bfff)
+    drop-shadow(0 0 20px #00bfff);
+
+  transition: 1.2s;
+}
+
+/* Texto da seção 1 */
+
+.iniciotxt {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  width: 90% ;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 25px;
+ 
+
+  h1 {
+    color: rgb(250, 250, 250);
+    text-transform: uppercase;
+  }
+  h2 {
+    color: rgb(67, 111, 65);
+  }
+  p {
+    color: rgba(255, 255, 255, 0.819);
+  }
+}
+
+/* Seção 2 */
+
+.conteudo2{
+  width: min(1200px, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px,2vw,180px);
+  padding-top: 60px;
+
+}
+
+.secao2 {
+  background-image: url("assets/620d1e45864bec4a2bf0a79dd001696d.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top:100px;
+}
+
+@media (max-width: 768px) {
+  .secao1 {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    padding: 90px 20px 40px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .perfil {
+    width: clamp(180px, 60vw, 280px);
+  }
+
+   .moldura {
+    transform: scale(0);
+  }
+
+  .info {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .iniciotxt h1 {
+    font-size: clamp(32px, 10vw, 55px);
+  }
+
+  .iniciotxt h2 {
+    font-size: clamp(24px, 8vw, 40px);
+  }
+
+  .iniciotxt p {
+    font-size: clamp(16px, 5vw, 24px);
+  }
+
+  .botoes {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+     transform: translateX(-120px);
+  }
+
+  .botoes button {
+    width: min(280px, 100%);
+  }
+
+    header {
+    padding: 70px;
+  }
+
+  header ul {
+    gap: 7px;
+    padding: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header ul li a {
+    font-size: 14px;
+  }
+
+  .gatinho img {
+    width: 150px;
+  }
+
+  .inicio,
+  .pessoa,
+  .whatsapp,
+  .instagram,
+  .git,
+  .linkedin {
+    width: 16px;
+  }
+
+}

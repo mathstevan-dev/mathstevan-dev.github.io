@@ -1,0 +1,48 @@
+<svg width="900" height="300" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="terminalGreen" x1="70" y1="150" x2="810" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00FF88"/>
+      <stop offset="0.45" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#42FF9E"/>
+    </linearGradient>
+
+    <linearGradient id="metalWhite" x1="230" y1="80" x2="620" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#D8E0E7"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <filter id="greenGlow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 1
+                0 0 0 0 0.45
+                0 0 0 0.8 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-20%" y="-50%" width="140%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Terminal prompt arrow -->
+  <g filter="url(#greenGlow)">
+    <path d="M95 82 L205 150 L95 218 L95 175 L142 150 L95 125 Z" fill="#29FF8A"/>
+  </g>
+
+  <!-- MS letters -->
+  <g filter="url(#softShadow)">
+    <path d="M260 214V86H303L364 154L425 86H468V214H426V143L377 199H351L302 143V214H260Z" fill="url(#metalWhite)"/>
+    <path d="M520 214C503 214 489 200 489 183V179H531V183C531 189 536 194 542 194H624C630 194 635 189 635 183V174C635 168 630 163 624 163H524C507 163 493 149 493 132V117C493 100 507 86 524 86H655C672 86 686 100 686 117V121H644V117C644 111 639 106 633 106H546C540 106 535 111 535 117V126C535 132 540 137 546 137H646C663 137 677 151 677 168V183C677 200 663 214 646 214H520Z" fill="url(#metalWhite)"/>
+  </g>
+
+  <!-- Cursor underscore -->
+  <g filter="url(#greenGlow)">
+    <rect x="725" y="190" width="95" height="22" rx="3" fill="#29FF8A"/>
+  </g>
+</svg>

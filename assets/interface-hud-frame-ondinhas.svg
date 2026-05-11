@@ -1,0 +1,157 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="borderGradient" x1="160" y1="450" x2="1440" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00A3FF"/>
+      <stop offset="0.45" stop-color="#38BDF8"/>
+      <stop offset="0.72" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#B45CFF"/>
+    </linearGradient>
+
+    <linearGradient id="innerGradient" x1="180" y1="455" x2="1415" y2="455" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#31C8FF" stop-opacity="0.85"/>
+      <stop offset="0.48" stop-color="#60A5FA" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="glassGradient" x1="220" y1="180" x2="1350" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#111827" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#2E1065" stop-opacity="0.22"/>
+    </linearGradient>
+
+    <linearGradient id="waveBlue" x1="0" y1="0" x2="500" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00A3FF" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="wavePurple" x1="1000" y1="0" x2="1600" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#B45CFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="blueGlow" x="40" y="30" width="1540" height="840" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0.55
+                0 0 0 0 1
+                0 0 0 0.9 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="purpleGlow" x="850" y="40" width="720" height="800" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.72
+                0 0 0 0 0.22
+                0 0 0 0 1
+                0 0 0 0.9 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="waveGlow" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- transparent glass fill -->
+  <path d="M184 181H1366L1402 216V697L1366 733H183L148 698V215L184 181Z"
+        fill="url(#glassGradient)" opacity="0.58"/>
+
+  <!-- small wavy lines coming out of the frame -->
+  <g filter="url(#waveGlow)" opacity="0.78">
+    <!-- left blue waves -->
+    <path d="M148 312 C104 296 72 319 34 302 C-4 285 -35 302 -70 286" stroke="url(#waveBlue)" stroke-width="1.8"/>
+    <path d="M148 346 C104 330 75 356 38 338 C0 320 -38 342 -74 324" stroke="url(#waveBlue)" stroke-width="1.2" opacity="0.65"/>
+    <path d="M148 620 C99 598 74 628 30 608 C-12 589 -46 612 -85 595" stroke="url(#waveBlue)" stroke-width="1.5" opacity="0.72"/>
+    <path d="M184 733 C132 758 92 724 48 750 C4 776 -36 747 -80 770" stroke="url(#waveBlue)" stroke-width="1.3" opacity="0.58"/>
+
+    <!-- top blue/purple short waves -->
+    <path d="M455 181 C500 159 535 196 578 174 C620 153 655 181 696 162" stroke="url(#waveBlue)" stroke-width="1.1" opacity="0.48"/>
+    <path d="M970 181 C1018 159 1050 195 1098 172 C1142 151 1178 181 1225 158" stroke="url(#wavePurple)" stroke-width="1.2" opacity="0.55"/>
+
+    <!-- right purple waves -->
+    <path d="M1402 265 C1450 247 1479 276 1522 256 C1566 236 1600 261 1642 240" stroke="url(#wavePurple)" stroke-width="1.7"/>
+    <path d="M1402 322 C1445 304 1474 331 1518 313 C1564 294 1598 321 1640 302" stroke="url(#wavePurple)" stroke-width="1.2" opacity="0.66"/>
+    <path d="M1402 620 C1453 598 1488 629 1535 608 C1580 588 1618 617 1660 594" stroke="url(#wavePurple)" stroke-width="1.3" opacity="0.62"/>
+    <path d="M1366 733 C1415 758 1450 724 1495 751 C1538 777 1578 746 1622 770" stroke="url(#wavePurple)" stroke-width="1.3" opacity="0.56"/>
+  </g>
+
+  <!-- outer sci-fi frame -->
+  <g filter="url(#blueGlow)">
+    <path d="M184 181H1366L1402 216V697L1366 733H183L148 698V215L184 181Z"
+          stroke="url(#borderGradient)" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <!-- inner frame -->
+  <path d="M203 198H1348L1382 230V678L1348 715H201L166 681V232L203 198Z"
+        stroke="url(#innerGradient)" stroke-width="1.5" stroke-linejoin="round" opacity="0.82"/>
+
+  <!-- left vertical details -->
+  <g filter="url(#softGlow)">
+    <path d="M149 215L149 328" stroke="#00A3FF" stroke-width="2" opacity="0.9"/>
+    <path d="M149 338L149 627" stroke="#00A3FF" stroke-width="1" opacity="0.35"/>
+    <path d="M149 642L149 698" stroke="#00A3FF" stroke-width="2" opacity="0.9"/>
+    <circle cx="149" cy="318" r="4" fill="#38BDF8"/>
+    <circle cx="149" cy="650" r="4" fill="#38BDF8"/>
+  </g>
+
+  <!-- top glow lines -->
+  <g opacity="0.9">
+    <path d="M230 181H680" stroke="#38BDF8" stroke-width="1.5"/>
+    <path d="M705 181H1050" stroke="#60A5FA" stroke-width="1"/>
+    <path d="M1080 181H1328" stroke="#A855F7" stroke-width="1.5"/>
+    <circle cx="690" cy="181" r="3" fill="#38BDF8" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- top-right futuristic notch/detail -->
+  <g filter="url(#purpleGlow)">
+    <path d="M1338 198L1367 198L1383 214V323" stroke="#B45CFF" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M1308 224H1224" stroke="#A855F7" stroke-width="1" opacity="0.65"/>
+    <path d="M1262 236H1185" stroke="#A855F7" stroke-width="1" opacity="0.45"/>
+    <path d="M1275 247H1213" stroke="#A855F7" stroke-width="1" opacity="0.55"/>
+  </g>
+
+  <!-- bottom details -->
+  <g filter="url(#softGlow)">
+    <path d="M180 700L198 718H300" stroke="#38BDF8" stroke-width="3"/>
+    <path d="M1120 733H1216" stroke="#A855F7" stroke-width="2"/>
+    <path d="M1240 733H1366" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="1232" cy="733" r="2.5" fill="#A855F7"/>
+    <circle cx="1218" cy="733" r="2" fill="#A855F7"/>
+  </g>
+
+  <!-- right side break/notch -->
+  <path d="M1402 497L1386 515V600L1402 618" stroke="#A855F7" stroke-width="2" opacity="0.75"/>
+
+  <!-- subtle corner highlights -->
+  <path d="M168 680L198 710" stroke="#C4B5FD" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M1362 198L1384 220" stroke="#C4B5FD" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- tiny HUD marks -->
+  <g opacity="0.5">
+    <path d="M1065 720H1112" stroke="#38BDF8"/>
+    <path d="M1130 720H1168" stroke="#A855F7"/>
+    <path d="M1168 720H1175" stroke="#A855F7" stroke-width="3"/>
+  </g>
+</svg>
