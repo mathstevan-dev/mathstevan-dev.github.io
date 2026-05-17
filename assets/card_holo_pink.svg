@@ -1,0 +1,95 @@
+<svg class="card-holo" viewBox="0 0 500 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Moldura holográfica cyberpunk rosa">
+  <defs>
+    <filter id="pinkGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="pinkStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff4fc3"/>
+      <stop offset="45%" stop-color="#ff1ca8"/>
+      <stop offset="100%" stop-color="#ff9be2"/>
+    </linearGradient>
+
+    <linearGradient id="glassFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff4fc3" stop-opacity="0.11"/>
+      <stop offset="55%" stop-color="#12001a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff1ca8" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- aura externa suave -->
+  <path
+    d="M70 40 H430 L470 80 V620 L430 660 H70 L30 620 V80 Z"
+    fill="none"
+    stroke="#ff1ca8"
+    stroke-width="18"
+    opacity="0.18"
+    filter="url(#softGlow)"
+  />
+
+  <!-- corpo translúcido -->
+  <path
+    d="M70 40 H430 L470 80 V620 L430 660 H70 L30 620 V80 Z"
+    fill="url(#glassFill)"
+    stroke="url(#pinkStroke)"
+    stroke-width="4"
+    filter="url(#pinkGlow)"
+  />
+
+  <!-- linha interna -->
+  <path
+    d="M88 62 H412 L448 98 V602 L412 638 H88 L52 602 V98 Z"
+    fill="none"
+    stroke="#ff8bdc"
+    stroke-width="1.5"
+    opacity="0.65"
+  />
+
+  <!-- brilho de base -->
+  <path
+    d="M120 662 H380"
+    stroke="#ff4fc3"
+    stroke-width="8"
+    stroke-linecap="round"
+    opacity="0.45"
+    filter="url(#softGlow)"
+  />
+
+  <!-- detalhes topo -->
+  <path d="M110 55 H170" stroke="#ff9be2" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M330 65 L350 65" stroke="#ff9be2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M360 65 L380 65" stroke="#ff9be2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M390 65 L410 65" stroke="#ff9be2" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- detalhes laterais -->
+  <path d="M42 250 H62 V300 H42" fill="none" stroke="#ff4fc3" stroke-width="3" opacity="0.8"/>
+  <path d="M438 210 H458 V270 H438" fill="none" stroke="#ff4fc3" stroke-width="3" opacity="0.55"/>
+  <path d="M443 360 H456" stroke="#ff9be2" stroke-width="2" opacity="0.55"/>
+  <path d="M44 415 H57" stroke="#ff9be2" stroke-width="2" opacity="0.45"/>
+
+  <!-- detalhes inferiores -->
+  <path d="M120 636 H175" stroke="#ff7bd6" stroke-width="2" opacity="0.55"/>
+  <path d="M325 636 H385" stroke="#ff7bd6" stroke-width="2" opacity="0.55"/>
+  <path d="M392 626 L420 626" stroke="#ff4fc3" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- pontinhos -->
+  <circle cx="75" cy="260" r="2" fill="#ff9be2"/>
+  <circle cx="75" cy="285" r="2" fill="#ff9be2"/>
+  <circle cx="75" cy="310" r="2" fill="#ff9be2"/>
+  <circle cx="75" cy="335" r="2" fill="#ff9be2"/>
+  <circle cx="425" cy="475" r="1.7" fill="#ff9be2" opacity="0.8"/>
+  <circle cx="425" cy="505" r="1.7" fill="#ff9be2" opacity="0.8"/>
+  <circle cx="425" cy="535" r="1.7" fill="#ff9be2" opacity="0.8"/>
+</svg>

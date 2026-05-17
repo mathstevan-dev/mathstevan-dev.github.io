@@ -1,0 +1,51 @@
+<svg viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0B4CFF" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#18D7FF"/>
+      <stop offset="50%" stop-color="#5DEBFF"/>
+      <stop offset="80%" stop-color="#18D7FF"/>
+      <stop offset="100%" stop-color="#0B4CFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-50%" y="-200%" width="200%" height="500%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path d="M40 40 H180 L200 46 H300 L320 40 H460"
+    stroke="#1ADFFF"
+    stroke-width="10"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.18"
+    filter="url(#neonGlow)"
+  />
+
+  <path d="M40 40 H180 L200 46 H300 L320 40 H460"
+    stroke="url(#lineGrad)"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+    filter="url(#neonGlow)"
+  />
+
+  <path d="M75 34 H185"
+    stroke="#6EF3FF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    opacity="0.8"
+  />
+
+  <path d="M205 50 H295"
+    stroke="#1ADFFF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    opacity="0.8"
+  />
+</svg>

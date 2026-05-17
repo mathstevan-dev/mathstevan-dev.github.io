@@ -1,0 +1,134 @@
+<svg viewBox="0 0 1400 160" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- Gradiente do texto -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2ED8FF"/>
+      <stop offset="50%" stop-color="#7A68FF"/>
+      <stop offset="100%" stop-color="#FF42F6"/>
+    </linearGradient>
+
+    <!-- Linha esquerda -->
+    <linearGradient id="leftLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#032C38"/>
+      <stop offset="100%" stop-color="#24DFFF"/>
+    </linearGradient>
+
+    <!-- Linha direita -->
+    <linearGradient id="rightLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF42F6"/>
+      <stop offset="100%" stop-color="#3A022F"/>
+    </linearGradient>
+
+    <!-- Glow FORTE apenas linhas -->
+    <filter id="lineGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur1"/>
+      <feGaussianBlur stdDeviation="10" result="blur2"/>
+
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glow LEVE texto -->
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- ESQUERDA -->
+  <g filter="url(#lineGlow)">
+
+    <!-- brilho -->
+    <line
+      x1="40"
+      y1="80"
+      x2="300"
+      y2="80"
+      stroke="#24DFFF"
+      stroke-width="12"
+      opacity="0.12"
+      stroke-linecap="round"
+    />
+
+    <!-- linha -->
+    <line
+      x1="40"
+      y1="80"
+      x2="300"
+      y2="80"
+      stroke="url(#leftLine)"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+
+    <!-- ponto -->
+    <circle
+      cx="320"
+      cy="80"
+      r="5"
+      fill="#24DFFF"
+    />
+
+  </g>
+
+  <!-- TEXTO -->
+  <text
+    x="700"
+    y="100"
+    text-anchor="middle"
+    font-family="Orbitron, Arial, sans-serif"
+    font-size="64"
+    font-weight="800"
+    letter-spacing="8"
+    fill="url(#textGradient)"
+    filter="url(#textGlow)"
+  >
+    MINHA JORNADA
+  </text>
+
+  <!-- DIREITA -->
+  <g filter="url(#lineGlow)">
+
+    <!-- brilho -->
+    <line
+      x1="1100"
+      y1="80"
+      x2="1360"
+      y2="80"
+      stroke="#FF42F6"
+      stroke-width="12"
+      opacity="0.12"
+      stroke-linecap="round"
+    />
+
+    <!-- linha -->
+    <line
+      x1="1100"
+      y1="80"
+      x2="1360"
+      y2="80"
+      stroke="url(#rightLine)"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+
+    <!-- ponto -->
+    <circle
+      cx="1080"
+      cy="80"
+      r="5"
+      fill="#FF42F6"
+    />
+
+  </g>
+
+</svg>

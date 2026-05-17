@@ -1,0 +1,51 @@
+<svg class="card-holo" viewBox="0 0 500 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="blueGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="blueStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4fd9ff"/>
+      <stop offset="50%" stop-color="#00bfff"/>
+      <stop offset="100%" stop-color="#8be9ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- brilho externo -->
+  <path
+    d="M70 40 H430 L470 80 V620 L430 660 H70 L30 620 V80 Z"
+    fill="rgba(0, 180, 255, 0.05)"
+    stroke="url(#blueStroke)"
+    stroke-width="4"
+    filter="url(#blueGlow)"
+  />
+
+  <!-- linha interna -->
+  <path
+    d="M88 62 H412 L448 98 V602 L412 638 H88 L52 602 V98 Z"
+    fill="none"
+    stroke="#7be7ff"
+    stroke-width="1.5"
+    opacity="0.65"
+  />
+
+  <!-- detalhes topo -->
+  <path d="M110 55 H170" stroke="#9bf1ff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M330 65 L350 65" stroke="#9bf1ff" stroke-width="5"/>
+  <path d="M360 65 L380 65" stroke="#9bf1ff" stroke-width="5"/>
+  <path d="M390 65 L410 65" stroke="#9bf1ff" stroke-width="5"/>
+
+  <!-- detalhes laterais -->
+  <path d="M42 250 H62 V300 H42" fill="none" stroke="#4fd9ff" stroke-width="3" opacity="0.8"/>
+  <path d="M438 210 H458 V270 H438" fill="none" stroke="#4fd9ff" stroke-width="3" opacity="0.55"/>
+
+  <!-- pontinhos -->
+  <circle cx="75" cy="260" r="2" fill="#9bf1ff"/>
+  <circle cx="75" cy="285" r="2" fill="#9bf1ff"/>
+  <circle cx="75" cy="310" r="2" fill="#9bf1ff"/>
+  <circle cx="75" cy="335" r="2" fill="#9bf1ff"/>
+</svg>
