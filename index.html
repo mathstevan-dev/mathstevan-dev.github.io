@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +24,7 @@
          <div class="navbarconteudo">
           <ul>
           <li><a href="#">Inicio <img src="assets/launch.svg" class="inicio"></a></li>
-          <li><a href="#">Sobre mim <img src="assets/person.svg" class="pessoa"></a></li>
+          <li><a href="#section2">Sobre mim <img src="assets/person.svg" class="pessoa"></a></li>
           <li><a href="https://wa.me/5551990151791?text=Olá%20Matheus!%0A%0AVi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.">WhatsApp <img src="assets/whatsapp.png" class="whatsapp"></a></li>
           <li><a href="https://www.instagram.com/math_stevan/">Instagram <img src="assets/instagram.png" class="instagram"></a></li>
           <li><a href="https://github.com/mathstevan-dev">GitHub <img src="assets/github.png" class="git"></a></li>
@@ -44,14 +44,14 @@
     </div>
     <div class="info">
       <div class="iniciotxt">
-        <h1>Desenvolvedor Front-End</h1>
-        <h2>Matheus Stevan</h2>
-        <p>Focado em criar interfaces modernas,</p>
-        <p>responsivas e com identidade visual forte.</p>
-        <p>Trabalhando com HTML, CSS, JavaScript.</p>
+        <h1 class="titulo-principal">Desenvolvedor Front-End</h1>
+        <h2 class="titulo-secundario">Matheus Stevan</h2>
+        <p class="texto-1">Focado em criar interfaces modernas,</p>
+        <p class="texto-2">responsivas e com identidade visual forte.</p>
+        <p class="texto-3">Trabalhando com HTML, CSS, JavaScript.</p>
       </div>
       <div class="botoes">
-        <button class="botaohud"> Entrar em Contato</button>
+        <button class="botaohud"><a href="#section2">Sobre mim</a></button>
       </div>
     </div>
   </div>
@@ -59,14 +59,14 @@
 
     <!-- Sessão 2 -->
 
-    <section class="secao2">
-      <img src="assets/titulo_h1.svg" class="tituloh1">
-      <h2> Conheça mais sobre mim, minhas habilidades e os
+    <section id="section2" class="secao2">
+      <img src="assets/titulo_h1.svg " class="tituloh1 revelar">
+      <h2 revelar> Conheça mais sobre mim, minhas habilidades e os
         projetos que desenvolvo.
       </h2>
      <div class="conteudo2">
       <div class="cards">
-       <div class="cardsobre">
+       <div class="cardsobre revelar-card">
         <img src="assets/iconesobre.png" class="iconesobre">
         <img src="assets/linha-neon-azul.svg" class="linhaazul">
         <img src="assets/sobremim.png" class="sobremim">
@@ -74,7 +74,7 @@
         <p>Apaixonado por tecnologia e desenvolvimento. <br> 
           Gosto de criar soluções funcionais <br>e com designs modernos.</p>
       </div>
-      <div class="cardskills">
+      <div class="cardskills revelar-card">
         <img src="assets/iconeskills.png" class="iconeskills">
         <img src="assets/linha-neon-roxa.svg" class="linharoxa">
         <img src="assets/skills.png" class="skills">
@@ -82,10 +82,10 @@
         <p>Tecnologias e ferramentas que utilizo <br>
           para transformar ideias em realidade.</p>
       </div>
-      <div class="cardprojetos">
+      <div class="cardprojetos revelar-card">
         <img src="assets/iconeprojetos.png" class="iconeprojetos">
         <img src="assets/linha-neon-rosa.svg" class="linharosa">
-        <img src="assets/emconstruçao.png" class="projetos">
+        <img src="assets/emconstruçao.png" class=" emconstrucao">
         <h3>PROJETOS</h3>
         <p>Alguns dos projetos que desenvolvi
           aplicando <br>tudo que aprendo no dia a dia.</p>
@@ -101,5 +101,6 @@
       <div class="">
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

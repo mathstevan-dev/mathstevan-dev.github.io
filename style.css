@@ -10,6 +10,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,14 @@ section {
   flex-direction: column;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
 
 /* =========================
    2. CABEÇALHO / NAVBAR
@@ -87,7 +96,7 @@ header ul li a:visited {
 }
 
 header ul li a:hover {
-  color: #ff0000;
+  color: #4018c1;
   filter: brightness(1.5) drop-shadow(0 0 10px #aa9696);
   transition: 0.8s;
 }
@@ -167,7 +176,7 @@ header:hover .logo i {
   justify-content: center;
   gap: clamp(40px, 2vw, 180px);
   padding-top: 60px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
 }
 
 .perfil {
@@ -228,7 +237,11 @@ header:hover .logo i {
   white-space: nowrap;
   opacity: 0.8;
   animation: aparecerDireita 1.4s ease forwards;
+  min-height: 55px;
+  min-width: 560px;
 }
+
+
 
 .iniciotxt h2 {
   color: rgb(67, 111, 65);
@@ -266,22 +279,21 @@ header:hover .logo i {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #cac1c1;
+  color: rgb(255, 255, 255);
   background-image: url("assets/botao.svg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
   font-family: "Orbitron", sans-serif;
-  font-size: 24px;
+  font-size: 34px;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
   white-space: nowrap;
   cursor: pointer;
-  transform: translateY(-10px);
+  transform: translateX(-15px);
   animation:
-    aparecerBaixo 1.9s ease forwards,
+    aparecerBaixo 3.9s ease forwards,
     glowBotao 2.5s ease-in-out infinite;
 }
 
@@ -300,12 +312,13 @@ header:hover .logo i {
 
 .secao2 {
   width: 100%;
-  height: 100vh;
+  height: 1100px;
   margin-top: -2px;
   margin-bottom: -2px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; 
+  justify-content:start;
+  padding: 100px 0 0 0;
   overflow: hidden;
   background-image:
     linear-gradient(
@@ -352,7 +365,7 @@ header:hover .logo i {
   display: grid;
   grid-template-columns: repeat(3,400px);
   justify-content: center;
-  gap: 200px;
+  gap: 100px;
   width: min(1500px, 100%);
   margin: 0 auto;
   transform: translateY(40px);
@@ -364,7 +377,7 @@ header:hover .logo i {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.25);
+  transform: scale(1.2);
   min-height: 600px;
   padding: 30px;
   display: flex;
@@ -432,7 +445,7 @@ header:hover .logo i {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.25);
+  transform: scale(1.2);
   min-height: 600px;
   padding: 30px;
   display: flex;
@@ -454,7 +467,7 @@ header:hover .logo i {
   width: 350px;
 }
 
-.projetos {
+.emconstrucao {
   position: absolute;
   top: 310px;
   align-self: center;
@@ -473,6 +486,28 @@ header:hover .logo i {
   text-align: center;
   margin-bottom: 230px;
  }
+
+ .revelar {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.revelar.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.revelar-card {
+  opacity: 0;
+  transform: translateY(40px) scale(1.25);
+  transition: 1.5s ease;
+}
+
+.revelar-card.ativo {
+  opacity: 1;
+  transform: translateY(0) scale(1.25);
+}
 
 /* =========================
    . SEÇÃO 3
