@@ -1,5 +1,5 @@
 /* =========================
-   1. RESET / BASE
+  RESET / BASE
 ========================= */
 
 * {
@@ -40,7 +40,7 @@ a:visited {
 }
 
 /* =========================
-   2. CABEÇALHO / NAVBAR
+  CABEÇALHO / NAVBAR
 ========================= */
 
 header {
@@ -101,25 +101,27 @@ header ul li a:hover {
   transition: 0.8s;
 }
 
-
 /* =========================
-   3. ÍCONES DA NAVBAR
+  ÍCONES DA NAVBAR
 ========================= */
 
-.inicio,
+.inicio{
+  width: 25px;
+  transform: translateY(5px) translateX(-5px);
+}
 .sobre,
 .terminalicon,
 .whatsapp,
 .instagram,
 .git,
 .linkedin {
-  width: 20px;
-  transform: translateY(5px) translateX(5px);
+  width: 22px;
+  transform: translateY(5px) translateX(-5px);
 }
 
 
 /* =========================
-   4. LOGO
+  LOGO
 ========================= */
 
 .logo {
@@ -148,7 +150,7 @@ header:hover .logo i {
 
 
 /* =========================
-   5. SEÇÃO 1
+  SEÇÃO 1
 ========================= */
 
 .secao1 {
@@ -218,7 +220,7 @@ header:hover .logo i {
 
 
 /* =========================
-   6. TEXTO DA SEÇÃO 1
+  TEXTO DA SEÇÃO 1
 ========================= */
 
 .iniciotxt {
@@ -264,7 +266,7 @@ header:hover .logo i {
 
 
 /* =========================
-   7. BOTÕES
+  BOTÕES
 ========================= */
 
 .botoes {
@@ -274,7 +276,7 @@ header:hover .logo i {
   margin-left: 0;
 }
 
-.botoes .botaohud {
+.botaohud {
   width: 380px;
   height: 100px;
   display: flex;
@@ -292,7 +294,7 @@ header:hover .logo i {
   font-weight: bold;
   white-space: nowrap;
   cursor: pointer;
-  transform: translateX(-15px);
+
   animation:
     aparecerBaixo 3.9s ease forwards,
     glowBotao 2.5s ease-in-out infinite;
@@ -306,9 +308,13 @@ header:hover .logo i {
   transition: 1.2s;
 }
 
+.botaohud:active  {
+  transform:scale(0.90)!important;
+}
+
 
 /* =========================
-   8. SEÇÃO 2
+  SEÇÃO 2
 ========================= */
 
 .secao2 {
@@ -468,17 +474,6 @@ header:hover .logo i {
   width: 350px;
 }
 
-.projetolink {
-  position: absolute;
-  top: 380px;
-  align-self: center;
-  width: 370px;
-  font-size: 10px;
-  transform:scale(1.15);
-  text-align: center;
-  margin-bottom: 230px;
-}
-
 .botaoproj1 {
   position: absolute;
   top: 320px;
@@ -497,6 +492,10 @@ header:hover .logo i {
   transition: 1.2s;
 }
 
+.botaoproj1:active {
+  transform: translateX(53px) translateY(5px) scale(0.90);
+}
+
 .botaoproj1 img {
   width: 100%;
   height: 100%;
@@ -504,6 +503,88 @@ header:hover .logo i {
 }
 
 .botaoproj1 span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.botaoproj2 {
+  position: absolute;
+  top: 420px;
+  display: inline-block;
+  width: 230px;
+  height: 80px;
+  margin: 0 auto;
+  transform: translateX(53px) translateY(-35px);
+}
+
+.botaoproj2:hover {
+    color: #ffffff;
+  filter:
+    drop-shadow(0 0 5px #ff00f241)
+    drop-shadow(0 0 5px #ff00f2);
+  transition: 1.2s;
+}
+
+.botaoproj2:active {
+  transform: translateX(53px) translateY(-30px) scale(0.90);
+}
+
+.botaoproj2 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.botaoproj2 span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.botaoproj3 {
+  position: absolute;
+  top: 520px;
+  display: inline-block;
+  width: 230px;
+  height: 80px;
+  margin: 0 auto;
+  transform: translateX(53px) translateY(-70px);
+}
+
+.botaoproj3:hover {
+    color: #ffffff;
+  filter:
+    drop-shadow(0 0 5px #ff00f241)
+    drop-shadow(0 0 5px #ff00f2);
+  transition: 1.2s;
+}
+
+.botaoproj3:active {
+  transform: translateX(53px) translateY(-65px) scale(0.90);
+}
+
+.botaoproj3 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.botaoproj3 span {
   position: absolute;
   inset: 0;
   display: flex;
@@ -552,7 +633,7 @@ header:hover .logo i {
 }
 
 /* =========================
-   . SEÇÃO 3
+  SEÇÃO 3
 ========================= */
 
 .secao3 {
@@ -637,122 +718,7 @@ header:hover .logo i {
 
 
 /* =========================
-   . PEDRA PAPEL TESOURA
-========================= */
-
-.conteudojogo {
-  width: min(1200px, 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.jogo {
-  width: 1000px;
-  height: 600px;
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid #006aff;
-  box-shadow: 0 0 25px rgba(0, 128, 255, 0.4);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.titulo-jogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  animation: aparecerBaixo 1.8s ease forwards;
-}
-
-.logo-jogo {
-  display: flex;
-  margin-bottom: 300px;
-  width: 900px;
-  animation: aparecerBaixo 1.8s ease forwards;
-}
-
-.imagensjogo {
-  width: 10px;
-  height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-}
-
-.pedraimg {
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-200px);
-  pointer-events: none;
-}
-
-.papelimg {
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-200px);
-  pointer-events: none;
-}
-
-.tesouraimg {
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-200px);
-  pointer-events: none;
-}
-
-.botoes-jogo {
-  display: flex;
-  gap: 190px;
-  transform: translateY(-70px) translateX(10px);
-  z-index: 9999;
-}
-
-.botao-jogo {
-  background: rgba(0, 255, 255, 0.08);
-  border: 1px solid #25f4ff;
-  color: #dfffff;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  box-shadow: 0 0 8px rgba(37, 244, 255, 0.35);
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.25s ease;
-  position: relative;
-}
-
-
-.botao-jogo:hover {
-  background: rgba(70, 253, 253, 0.695);
-  border-color: #00bfff;
-  color: #ffffff;
-  box-shadow: 0 0 12px rgba(0, 242, 255, 0.515);
-  transform: translateY(-2px);
-}
-
-.botao-jogo:active {
-  background: rgb(0, 255, 255);
-  border-color: #00bfff;
-  color: #ffffff;
-  box-shadow: 0 0 15px rgba(37, 244, 255, 0.9);
-  transform: scale(0.90);
-}
-
-/* =========================
-   9. ANIMAÇÕES
+  ANIMAÇÕES
 ========================= */
 
 @keyframes aparecerEsquerda {
@@ -832,120 +798,272 @@ header:hover .logo i {
 
 
 /* =========================
-   10. RESPONSIVO / TELEFONE
+  RESPONSIVO / TELEFONE
 ========================= */
 
 @media (max-width: 768px) {
-  .secao1 {
-    height: auto;
-    min-height: 100vh;
 
-    overflow: visible;
-    padding: 90px 20px 40px;
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
+
+  .navbarconteudo {
+    width: min(380px, 95vw);
+    height: 150px;
+    background-size: 100% 100%;
+    transform: translateY(100px)translateX(-40px);
+    padding: 20px;
+  }
+  
+  header ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .logo {
+  transform: translateX(150px);
+  }
+
+  /* SEÇÃO 1 */
+
+  .secao1 {
+    min-height: 100vh;
+    height: auto;
+    padding: 250px 20px 80px;
   }
 
   .conteudo {
     flex-direction: column;
-    gap: 25px;
+    gap: 40px;
     text-align: center;
   }
 
   .perfil {
-    width: clamp(180px, 40vw, 200px);
+    width: 220px;
+    height: 220px;
+    overflow: visible;
+  }
+
+  .foto {
+    width: 100%;
+    height: 100%;
   }
 
   .moldura {
-    transform: scale(3);
+    width: 100%;
+    height: 100%;
+    transform: scale(3.3) !important;
   }
 
   .info {
-    align-items: center;
+    width: 100%;
     max-width: 100%;
+    align-items: center;
+  }
+
+  .iniciotxt {
+    width: 100%;
+    transform: none;
+    text-align: center;
   }
 
   .iniciotxt h1 {
-    font-size: clamp(32px, 7vw, 55px);
+    min-width: 0;
+    white-space: normal;
+    font-size: 42px;
+    line-height: 1;
   }
 
   .iniciotxt h2 {
-    font-size: clamp(24px, 7vw, 40px);
+    font-size: 30px;
   }
 
   .iniciotxt p {
-    font-size: clamp(16px, 5vw, 24px);
-  }
-
-  .cards {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  }
-  .card {
-  display: flex;
-  gap: 0px;
-  flex-wrap: wrap;
-  width: 200px;
-  height: 300px;
-  border: 2px solid cyan;
-  }
-
-  .card h3{
-  font-size: 30px
-  }
-
-  .card p{
-  font-size: 15px;
+    white-space: normal;
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   .botoes {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .botaohud {
+    width: 280px;
+    height: 80px;
+    font-size: 28px;
+  }
+
+  /* SEÇÃO 2 */
+
+  .secao2 {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px;
+  }
+
+  .tituloh1 {
+    width: min(400px, 95vw);
+    margin-top: 170px;
+  }
+
+  .secao2 h2 {
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
+    transform: none;
+  }
+
+  .cardsobre,
+  .cardskills,
+  .cardprojetos {
+    width: min(30px, 92vw);
+    min-height: 550px;
+    transform: none;
+  }
+
+  .revelar-card,
+  .revelar-card.ativo {
+    transform: none;
+  }
+
+  /* SEÇÃO 3 */
+
+  .secao3 {
+    padding: 80px 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .terminal {
     width: 100%;
+    height: 500px;
   }
 
-  .botoes button {
-    width: min(280px, 100%);
+  .terminal-input input {
+    font-size: 12px;
   }
 
-  header {
-    padding: 0 2%;
+  .secao1 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
   }
 
-  header ul {
-    gap: 7px;
-    padding: 1px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  header ul li a {
-    font-size: 14px;
-  }
-
-  .logo img {
-    width: 120px;
-  }
-
-  .navbarconteudo {
+  .secao2 {
+    position: relative;
     z-index: 2;
-    width: 500px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 23px;
+    overflow: hidden;
+    margin-top: 0;
   }
 
-  .inicio,
-  .sobre,
-  .terminalicon,
-  .whatsapp,
-  .instagram,
-  .git,
-  .linkedin {
-    width: 15px;
+  .cardsobre,
+  .cardskills,
+  .cardprojetos {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .botaoproj1,
+  .botaoproj2,
+  .botaoproj3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: block;
+    margin: 10px auto;
+    transform: none !important;
+  }
+
+   .secao2 {
+    padding: 50px 18px 90px;
+    gap: 0px;
+  }
+
+  .cards {
+    gap: 0px;
+  }
+
+  .cardsobre,
+  .cardskills,
+  .cardprojetos {
+    width: min(740px, 92vw);
+    min-height: 620px;
+    padding: 75px;
+    transform: none !important;
+  }
+
+  .cards h3 {
+    font-size: 30px;
+    margin-top: 0px;
+    line-height: 1;
+    transform: translateY(100px);
+  }
+
+  .cards p {
+    bottom: 30px;
+    font-size: 8px;
+    position: relative;
+    text-align: center;
+    transform: translateY(80px)scale(1.52);
+  }
+
+  .iconesobre,
+  .iconeskills,
+  .iconeprojetos {
+    width: 300px;
+    top: 70px;
+  }
+
+  .linhaazul,
+  .linharoxa,
+  .linharosa {
+    width: 320px;
+    top: 238px;
+  }
+
+  .sobremim,
+  .skills {
+    width: 310px;
+    top: 325px;
+  }
+
+  .botaoproj1,
+  .botaoproj2,
+  .botaoproj3 {
+    position: absolute;
+    left: 50%;
+    width: 220px;
+    height: 70px;
+    transform: translateX(-50%) !important;
+    margin: 0;
+  }
+
+  .botaoproj1 {
+    top: 320px;
+  }
+
+  .botaoproj2 {
+    top: 380px;
+  }
+
+  .botaoproj3 {
+    top: 440px;
+  }
+
+  .botaoproj1 span,
+  .botaoproj2 span,
+  .botaoproj3 span {
+    font-size: 19px;
   }
 }
-
 
