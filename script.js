@@ -150,16 +150,16 @@ function escreverLinha(texto) {
 
 function executarComando(comando) {
     if (comando === "help") {
-        escreverLinha("Comandos disponíveis: sobre, skills, projetos, contato, clear.");
+        escreverLinha("Comandos disponíveis: sobre, skills, projetos, contato, limpar.");
     } else if (comando === "sobre") {
         escreverLinha("Matheus Stevan — estudante de ADS de 28 anos focado em Front-End, com desejo de se desenvolver em full stack.");
     } else if (comando === "skills") {
-        escreverLinha("HTML, CSS, JavaScript, Reacts, TypeScript, Git, GitHub e VS Code, entre outras tecnologias.");
+        escreverLinha("HTML, CSS, JavaScript, React, TypeScript, Git, GitHub e VS Code, entre outras tecnologias.");
     } else if (comando === "projetos") {
-        escreverLinha("Projetos: Portfólio, Calculadora, Pedra Papel Tesoura.");
+        escreverLinha("Projetos: Portfólio, Calculadora, Pedra Papel Tesoura (e este terminal).");
     } else if (comando === "contato") {
-        escreverLinha("WhatsApp: 51 99015-1791 | GitHub: mathstevan-dev");
-    } else if (comando === "clear") {
+        escreverLinha("| WhatsApp: 51 99015-1791 | GitHub: mathstevan-dev | Instagram: math_stevan |");
+    } else if (comando === "limpar") {
         terminal.innerHTML = "";
     } else {
         escreverLinha("Comando não encontrado. Digite help.");

@@ -68,7 +68,7 @@ header {
 .navbarconteudo {
   position: relative;
   z-index: 2;
-  width: min(90vw,700px);
+  width: min(90vw,730px);
   height: 80px;
   display: flex;
   align-items: center;
@@ -107,15 +107,18 @@ header ul li a:hover {
    ÍCONES DA NAVBAR
 ========================= */
 
-.inicio,
+.inicio{
+  width: 25px;
+  transform: translateY(5px) translateX(-3px);
+}
 .sobre,
 .terminalicon,
 .whatsapp,
 .instagram,
 .git,
 .linkedin {
-  width: 20px;
-  transform: translateY(5px) translateX(5px);
+  width: 22px;
+  transform: translateY(5px) translateX(-3px);
 }
 
 

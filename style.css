@@ -485,7 +485,7 @@ header:hover .logo i {
 }
 
 .botaoproj1:hover {
-    color: #ffffff;
+  color: #ffffff;
   filter:
     drop-shadow(0 0 5px #ff00f241)
     drop-shadow(0 0 5px #ff00f2);
@@ -526,7 +526,7 @@ header:hover .logo i {
 }
 
 .botaoproj2:hover {
-    color: #ffffff;
+  color: #ffffff;
   filter:
     drop-shadow(0 0 5px #ff00f241)
     drop-shadow(0 0 5px #ff00f2);
@@ -567,7 +567,7 @@ header:hover .logo i {
 }
 
 .botaoproj3:hover {
-    color: #ffffff;
+  color: #ffffff;
   filter:
     drop-shadow(0 0 5px #ff00f241)
     drop-shadow(0 0 5px #ff00f2);
@@ -657,8 +657,8 @@ header:hover .logo i {
 }
 
 .terminal {
-  width: min(900px, 90%);
-  height: 500px;
+  width: min(1100px, 90%);
+  height: 600px;
   background: rgba(0, 0, 0, 0.85);
   border: 1px solid #00ff88;
   box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
@@ -690,7 +690,7 @@ header:hover .logo i {
 }
 
 .terminal-conteudo {
-  height: 370px;
+  height: 470px;
   padding: 20px;
   color: #00ff88;
   overflow-y: auto;
