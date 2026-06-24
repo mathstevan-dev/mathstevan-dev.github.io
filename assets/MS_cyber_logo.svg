@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 128">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Cyber arrow -->
+  <path d="M40 30 L90 64 L40 98 L40 78 L65 64 L40 50 Z"
+        fill="#22f5a0" filter="url(#glow)"/>
+
+  <!-- Stylized M -->
+  <path d="M145 30 H185 L256 78 L327 30 H367 V98 H327 V54 L256 110 L185 54 V98 H145 Z"
+        fill="#f4f7fb"/>
+
+  <!-- Accent cut -->
+  <path d="M190 55 L220 75 L205 82 L175 62 Z"
+        fill="#0c1220"/>
+
+  <!-- Underscore -->
+  <rect x="405" y="82" width="70" height="10" rx="3"
+        fill="#22f5a0" filter="url(#glow)"/>
+</svg>
