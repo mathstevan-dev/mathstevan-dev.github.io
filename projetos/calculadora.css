@@ -241,6 +241,10 @@ header:hover .logo i {
   color: white
 }
 
+.botaocalcular {
+  background-color: #ae6efc;
+  color: white
+}
 
 .botaofunction:hover {
   transform: scale(1.05);
@@ -260,6 +264,13 @@ header:hover .logo i {
   transform: scale(1.05);
   filter:
   drop-shadow(0 0 5px #ff9f0a);
+  transition: 0.5s;
+}
+
+.botaocalcular:hover {
+  transform: scale(1.05);
+  filter:
+  drop-shadow(0 0 5px #ae6efc);
   transition: 0.5s;
 }
 
@@ -284,23 +295,34 @@ header:hover .logo i {
   transition: 0.5s;
 }
 
+.botaocalcular:active {
+  transform: scale(0.90);
+  filter:
+  drop-shadow(0 0 10px #ae6efc);
+  transition: 0.5s;
+}
+
 /* =========================
   RESPONSIVO / TELEFONE
 ========================= */
 
 @media (max-width: 768px) {
 
-  body {
+ body {
     overflow-x: hidden;
   }
 
   /* NAVBAR */
+  
+  header {
+    position:absolute;
+  }
 
   .navbarconteudo {
     width: min(380px, 95vw);
     height: 150px;
     background-size: 100% 100%;
-    transform: translateY(100px)translateX(-40px);
+    transform: translateY(100px)translateX(-55px);
     padding: 20px;
   }
   
@@ -311,7 +333,7 @@ header:hover .logo i {
   }
 
   .logo {
-  transform: translateX(150px);
+  transform: translateX(170px);
   }
 
   /* SEÇÃO 1 */

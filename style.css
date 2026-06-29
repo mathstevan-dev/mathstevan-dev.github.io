@@ -353,7 +353,7 @@ header:hover .logo i {
 
 .tituloh1 {
   display: block;
-  width: 850px;
+  width: 2550px;
   max-width:90%;
   text-align: center;
   z-index: 5;
@@ -808,6 +808,10 @@ header:hover .logo i {
   }
 
   /* NAVBAR */
+  
+  header {
+    position:absolute;
+  }
 
   .navbarconteudo {
     width: min(380px, 95vw);
@@ -830,8 +834,8 @@ header:hover .logo i {
   /* SEÇÃO 1 */
 
   .secao1 {
-    min-height: 100vh;
-    height: auto;
+    height: 150vh;
+    width: auto;
     padding: 250px 20px 80px;
   }
 
@@ -898,7 +902,7 @@ header:hover .logo i {
     font-size: 28px;
   }
 
-  /* SEÇÃO 2 */
+ /* SEÇÃO 2 */
 
   .secao2 {
     height: auto;
@@ -936,23 +940,6 @@ header:hover .logo i {
     transform: none;
   }
 
-  /* SEÇÃO 3 */
-
-  .secao3 {
-    padding: 80px 20px;
-    height: auto;
-    min-height: 100vh;
-  }
-
-  .terminal {
-    width: 100%;
-    height: 500px;
-  }
-
-  .terminal-input input {
-    font-size: 12px;
-  }
-
   .secao1 {
     position: relative;
     z-index: 1;
@@ -984,7 +971,7 @@ header:hover .logo i {
     transform: none !important;
   }
 
-   .secao2 {
+  .secao2 {
     padding: 50px 18px 90px;
     gap: 0px;
   }
@@ -1014,7 +1001,7 @@ header:hover .logo i {
     font-size: 8px;
     position: relative;
     text-align: center;
-    transform: translateY(80px)scale(1.52);
+    transform: translateY(80px) scale(1.52);
   }
 
   .iconesobre,
@@ -1065,5 +1052,49 @@ header:hover .logo i {
   .botaoproj3 span {
     font-size: 19px;
   }
+
+  /* SEÇÃO 3 */
+
+  .secao3 {
+    padding: 80px 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .terminal {
+    width: 95vw;
+    height: 500px;
+  }
+
+  .terminal-topo {
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  .terminal-topo span {
+    width: 12px;
+    height: 12px;
+  }
+
+  .terminal-topo p {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .terminal-conteudo {
+    height: 390px;
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .terminal-input {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  .terminal-input input {
+    font-size: 18px;
+  }
+
 }
 
