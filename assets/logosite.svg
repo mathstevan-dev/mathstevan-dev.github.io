@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 640 512">
+
+<defs>
+
+<linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#39FFD0"/>
+    <stop offset="100%" stop-color="#00D9FF"/>
+</linearGradient>
+
+<filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+</filter>
+
+</defs>
+
+<!-- < -->
+
+<polyline
+points="120,120 60,256 120,392"
+stroke="url(#g)"
+stroke-width="18"
+stroke-linecap="round"
+stroke-linejoin="round"
+fill="none"
+filter="url(#glow)"/>
+
+<!-- M (maior) -->
+
+<path
+d="
+M180 120
+
+L180 392
+
+L230 392
+
+L230 190
+
+L320 300
+
+L410 190
+
+L410 392
+
+L460 392
+
+L460 120
+
+L410 120
+
+L320 235
+
+L230 120
+
+Z
+"
+transform="translate(320 256) scale(1.15) translate(-320 -256)"
+fill="#FFFFFF"/>
+
+<!-- > -->
+
+<polyline
+points="520,120 580,256 520,392"
+stroke="url(#g)"
+stroke-width="18"
+stroke-linecap="round"
+stroke-linejoin="round"
+fill="none"
+filter="url(#glow)"/>
+
+</svg>
